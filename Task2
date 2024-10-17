@@ -1,0 +1,22 @@
+array1 = ["I", "L", "Y"]
+array2 = [
+    ["I", "L", "O"],
+    ["V", "E", "Y"],
+    ["O", "U", "!"]
+]
+
+array = input("What type of array do you want to be displayed? ")
+
+def loop_through_array(array1):
+    for element in array1:
+        print(element)
+
+if array == "single dimensional array":
+    loop_through_array(array1)
+
+elif array == "two dimensional array":
+    for sub_array in array2:
+        loop_through_array(sub_array)
+        
+else:
+    print("Error")
